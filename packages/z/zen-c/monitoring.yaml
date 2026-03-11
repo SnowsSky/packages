@@ -1,0 +1,6 @@
+releases:
+  id: ~ # Check https://release-monitoring.org/projects/search/
+  rss: https://github.com/z-libs/Zen-C/tags.atom
+ # No known CPE, checked 2026-03-07
+security:
+  cpe: ~

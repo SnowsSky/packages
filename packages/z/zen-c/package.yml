@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=/usr/share/ypkg/schema/schema.json
+name       : zen-c
+version    : 0.4.2
+release    : 1
+source     :
+    - https://github.com/z-libs/Zen-C/archive/refs/tags/v0.4.2.tar.gz : 2e9ef13f8fdc523a1d9c6f79f1be5db969257ad18e2b19b0ba70aaa1c23deb8a
+homepage   : https://www.zenc-lang.org/ 
+license    : MIT
+component  : programming
+summary    : Write like a high-level language, run like C. 
+description: |
+    Write like a high-level language, run like C. 
+rundeps    :
+    - binutils
+    - gcc
+    - glibc-devel
+    - linux-headers
+build      : |
+    %make
+install    : |
+    #%make_install
+    install -Dm755 zc $installdir/usr/bin/zc
